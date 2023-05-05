@@ -72,5 +72,44 @@
             <li>Adobe Photoshop, Illustrator, InDesign</li>
 
         </ul>
+
+        <hr>
+
+        <h2>Code example:</h2>
+
+        <h3>Code example: <p> Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.</p></h3>
+
+        <!-- <p> Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.</p> -->
+
+        <p>function peak(arr) {
+
+            <br>
+
+            for (let i = 1; i < arr.length - 1; i++) <br> {
+              let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) =><br> accumulator + currentValue);<br>
+              let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) =><br> accumulator + currentValue);
+              if (leftSum === rightSum) <br> {
+                return i;
+              }
+            }
+            return -1;
+          }</p>
+
+          <hr>
+
+          <h2>Courses:</h2>
+
+
+       <ul>
+
+        <li>Courses:
+            HTML and CSS Tutorials on the <a href="">w3schools</a> (completed)</li>
+
+       </ul>   
+
+       <img src="" alt="#">
+
+
+
 </body>
 </html>
